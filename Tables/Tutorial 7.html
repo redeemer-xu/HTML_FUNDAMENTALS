@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>Table</title> 
+                <!-- applying border to table, table row, table header and table data-->
+        <style> 
+            table,tr, th, td { 
+                border-width: 1px;
+                border-color: black; 
+                border-style: solid;
+            }
+
+            caption{
+                font-weight: bold;
+                font-size: 20px;
+                text-align: center;
+                caption-side: top;
+            }
+
+            thead{
+                background-color: lightgray;
+            }
+            tbody{
+                background-color: rgb(218, 218, 26);
+            }
+            tfoot{
+                background-color: lightblue;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        
+        <table>
+            <thead>
+            <tr>
+                    <td>Redeemer</td>
+                    <td>Aparece</td>
+                    <td>20</td>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Abraham</td>
+                    <td>Aparece</td>
+                    <td>22</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="4" >this is a footer</td>
+                </tr>
+            </tfoot>
+
+        </table>
+
+        <br><br>
+
+        <table>
+            <caption>Student Marks</caption>
+            <thead>
+                <tr>
+                    <th rowspan="3">Name</th> <!--rowspan example-->
+                    <th colspan="3">Subjects</th> <!--colspan example-->
+                </tr>
+            
+                <tr>
+                    <td>C++</td>
+                    <td>Java</td>
+                    <td>Python</td>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Redeemer</td>
+                    <td style="text-align: center;">95</td>
+                    <td>90</td>
+                    <td>90</td>
+                </tr>
+                <tr>
+                    <td>Patrick</td>
+                    <td>94</td>
+                    <td>93</td>
+                    <td>93</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="4" >this is a footer</td>
+                </tr>
+            </tfoot>
+
+        </table>
+
+    </body>
+
+</html>
