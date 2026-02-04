@@ -70,7 +70,113 @@
 
 
         </form>
+        
+        <br><br>
 
+        <form target="_blank">
+            <input type='date' value="2026-01-31"><br/>
+            <input type='date' min="2026-01-31" max="2026-12-31"><br/>
+            <input type='datetime-local'><br/>
+            <input type='month'><br/>
+            <input type="time"><br/>
+            <input type="time" value="01:30"><br/>
+            <input type="week"><br/>
+            <input type="submit"><br/>
+            
+        </form>
 
-    </body>
+        <form target="_blank">
+            <input type="file" accept="image/png, image/svg+xml"/><br/>
+            <input type="file" accept="image/png, image/svg+xml" multiple/><br/>
+            <input type="submit"><br/><br/>
+
+            <input id="apple" type="checkbox" />
+            <label for="apple">Apple</label><br>
+
+            <input id="banana"  type="checkbox" checked />
+            <label for="banana">Banana</label><br>
+            <input type="submit"> <br/> 
+
+            <br/>
+
+            
+            <input id="yes" name="answer" type="radio" />
+            <label for="yes">Yes</label><br>
+
+            
+            <input id="no" name="answer" type="radio" />
+            <label for="no">No</label><br>
+
+            <input if="maybe" name="answer" type="radio"/>
+            <label for="maybe">Maybe</label>
+
+            <br>
+            <br>
+
+            <input type="text" placeholder="Name">
+            <input type="password" placeholder="password">
+            <input type="submit">
+            <input type="button" value="Click Me">
+            <input type="reset">
+
+            
+            <br>
+            <br>
+
+            <input type="range" min="0" max="100" value="50"><br/>
+            <input type="color" value="#ffffff"><br/>
+            <input type="hidden">
+
+            
+            <br>
+            <br>
+
+            <textarea cols="20" rows="20" maxlength="20" placeholder="Write something!"></textarea><br/>
+            <input type="submit">
+
+            
+            <br>
+            <br>
+
+            <select name="Studets">
+                <option value="redeemer">Redeemer</option>
+                    <option value="patrick">Patrick</option>
+                <option value="maira">Maira</option>
+            </select>
+            <br/>
+            <input type="submit">
+        </form>
+
+        <br/>
+
+        <select name="fruits" multiple>
+                <option value="apple">Apple</option>
+                    <option value="orange">Orange</option>
+                    <option value="grapes">Grapes</option>
+            </select>
+            <br/>
+            <input type="submit">
+        </form>
+
+        <br/>
+
+        <label for="section">Choose Section:</label>
+        <select name="section">
+            <optgroup label="SECTION 1">
+                <option value="redeemer">Redeemer</option>
+                <option value="abraham">Abraham</option>
+            <optgroup label="SECTION 2"></optgroup>
+                <option value="patrick">Patrick</option>
+                <option value="juliana">Juliana</option>
+                <input type="submit">
+            </select>
+
+        <br>
+        <br>
+
+        <label id="name">Name</label><br/>
+        <input id="name" type="text">
+        
+
+    </body> 
 </html>
