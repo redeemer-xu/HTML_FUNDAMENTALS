@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sweetAlert</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script></script> <!-- sweetalert cdn link -->
+</head>
+<body>
+    <button id="normalButton">Normal Button</button>
+    <button id="sweetalert">Sweet Button</button>
+    <script>
+        document.getElementById('normalButton').addEventListener('click', function(){
+            alert('I am a normal alert');
+        })
+        document.getElementById('sweetalert').addEventListener('click', function(){
+            Swal.fire({
+                title: 'I am a sweet alert',
+                text: 'This is a sweet alert example',
+                icon: 'success',
+                confirmButtonText: 'Cool'
+            })
+        })
+    </script>
+</body>
+</html>

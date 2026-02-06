@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <title>HTML characters </title>
+        <style>
+            table, tr, th td {
+                border-width: 1px;
+                border-color: rgb(0, 0, 0);
+                border-style: solid;
+
+            }
+
+            caption{
+                font-weight: bold;
+                font-size: 20px;
+                text-align: center;
+                caption-side: top;
+            }
+
+             thead{
+                background-color: lightgray;
+            }
+            tbody{
+                background-color: rgb(218, 218, 26);
+            }
+            tfoot{
+                background-color: lightblue;
+            }
+        </style>
+    </head>
+
+
+    <body>
+
+        <h1>&yen   &nbsp;&nbsp;&nbsp;     50</h1> <!--if you want to have more space use: &nbsp;-->
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Entity Name</th>
+                    <th>Entity Number</th>
+                    <th>Entity Hex</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <td>Yen</td>
+                <td>&yen</td>
+                <td>&#165</td>
+                <td>&#xa5</td>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="4">this is tfoot</td>
+                </tr>
+            </tfoot>
+            
+        </table>
+
+        <br/><br/>
+
+        <meta charset="UTF-8"/> <!--USE this to access emoji: UTF-8-->
+        <table>
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Entity number</th>
+                    <th>Entity hex</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Tears of Joy</td>
+                    <td style="text-align: center;">&#128514;</td>
+                    <td style="text-align: center;">&#x1f602;</td>
+                </tr>
+                 <tr>
+                    <td>Smile</td>
+                    <td style="text-align: center;">&#128512;</td>
+                    <td style="text-align: center;">&#x1f600;</td>
+                </tr>
+                 <tr>
+                    <td>Smile w/ Horns</td>
+                    <td style="text-align: center;">&#128520;</td>
+                    <td style="text-align: center;">&#x1f608;</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </body>
+</html>
